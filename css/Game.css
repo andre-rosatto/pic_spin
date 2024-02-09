@@ -1,0 +1,33 @@
+#game {
+	position: relative;
+	border: 1px solid white;
+	aspect-ratio: 1 / 1;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .75);
+	overflow: hidden;
+	user-select: none;
+	background-position: center;
+}
+
+#game #next {
+	position: absolute;
+	width: 10%;
+	aspect-ratio: 1 / 1;
+	background-image: url('../assets/next.svg');
+	right: 120%;
+	top: 1%;
+	pointer-events: none;
+}
+
+#game #next.show {
+	pointer-events: all;
+	cursor: pointer;
+	right: 1%;
+	transition: right .5s;
+}
+
+#game #next.hide {
+	right: -10%;
+	transition: right .1s;
+	pointer-events: none;
+	cursor: default;
+}

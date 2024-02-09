@@ -1,0 +1,1 @@
+Pic Spin é um jogo criado em Javascript e utiliza a API do site de fotos Pixabay.
