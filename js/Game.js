@@ -26,7 +26,6 @@ export default class Game {
             .then(res => res.json())
             .then(data => {
             const picURL = data.hits[Math.floor(Math.random() * data.hits.length)].largeImageURL;
-            console.log(picURL);
             document.querySelector('#game').style.backgroundImage = `url(${picURL})`;
             for (let i = 0; i < DISC_COUNT; i++) {
                 const disc = new Disc(i, picURL, () => this.onDiscRotate());
